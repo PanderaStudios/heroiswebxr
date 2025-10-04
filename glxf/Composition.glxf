@@ -7,14 +7,65 @@
   "scenes": [
     {
       "nodes": [
-        0,
         1,
+        0,
         2,
         3
       ]
     }
   ],
   "nodes": [
+    {
+      "name": "plantSansevieria",
+      "translation": [
+        1.2000000476837158,
+        0.8500000238418579,
+        -1.7999999523162842
+      ],
+      "asset": 0,
+      "extras": {
+        "meta_spatial": {
+          "version": 1,
+          "components": {
+            "com.iwsdk.components.Interactable": {},
+            "com.iwsdk.components.DistanceGrabbable": {
+              "movementMode": {
+                "value": 0,
+                "type": "MovementMode",
+                "alias": "MoveFromTarget",
+                "keyString": "movementMode"
+              },
+              "moveSpeed": {
+                "value": 0.1,
+                "type": "Float",
+                "keyString": "moveSpeed"
+              },
+              "rotate": {
+                "value": true,
+                "type": "Boolean",
+                "keyString": "rotate"
+              },
+              "returnToOrigin": {
+                "value": false,
+                "type": "Boolean",
+                "keyString": "returnToOrigin"
+              },
+              "scale": {
+                "value": true,
+                "type": "Boolean",
+                "keyString": "scale"
+              },
+              "translate": {
+                "value": true,
+                "type": "Boolean",
+                "keyString": "translate"
+              }
+            }
+          },
+          "entity_id": "plantSansevieria"
+        }
+      }
+    },
     {
       "name": "welcomePanel",
       "translation": [
@@ -80,57 +131,6 @@
             }
           },
           "entity_id": "welcomePanel"
-        }
-      }
-    },
-    {
-      "name": "plantSansevieria",
-      "translation": [
-        1.2000000476837158,
-        0.8500000238418579,
-        -1.7999999523162842
-      ],
-      "asset": 0,
-      "extras": {
-        "meta_spatial": {
-          "version": 1,
-          "components": {
-            "com.iwsdk.components.Interactable": {},
-            "com.iwsdk.components.DistanceGrabbable": {
-              "movementMode": {
-                "value": 0,
-                "type": "MovementMode",
-                "alias": "MoveFromTarget",
-                "keyString": "movementMode"
-              },
-              "moveSpeed": {
-                "value": 0.1,
-                "type": "Float",
-                "keyString": "moveSpeed"
-              },
-              "rotate": {
-                "value": true,
-                "type": "Boolean",
-                "keyString": "rotate"
-              },
-              "returnToOrigin": {
-                "value": false,
-                "type": "Boolean",
-                "keyString": "returnToOrigin"
-              },
-              "scale": {
-                "value": true,
-                "type": "Boolean",
-                "keyString": "scale"
-              },
-              "translate": {
-                "value": true,
-                "type": "Boolean",
-                "keyString": "translate"
-              }
-            }
-          },
-          "entity_id": "plantSansevieria"
         }
       }
     },

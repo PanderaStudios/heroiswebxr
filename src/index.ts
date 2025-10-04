@@ -10,7 +10,7 @@ import {
   World,
 } from "@iwsdk/core";
 
-import { RobotSystem } from "./robot.js";
+// import { RobotSystem } from "./robot.js";
 
 World.create(document.getElementById("scene-container") as HTMLDivElement, {
   xr: {
@@ -25,12 +25,12 @@ World.create(document.getElementById("scene-container") as HTMLDivElement, {
     physics: false,
     sceneUnderstanding: false,
   },
-  level: "public/glxf/Composition.glxf",
+  level: "glxf/Composition.glxf",
 }).then((world) => {
   const { camera } = world;
 
   camera.position.set(-4, 1.5, -6);
   camera.rotateY(-Math.PI * 0.75);
 
-  world.registerSystem(RobotSystem);
+  // world.registerSystem(RobotSystem);
 });

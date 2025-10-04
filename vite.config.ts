@@ -27,19 +27,19 @@ export default defineConfig({
     }),
     generateGLXF({
       metaSpatialDir: "metaspatial",
-      outputDir: "heroiswebxr/glxf",
+      outputDir: "public/glxf",
       verbose: false,
       enableWatcher: true,
     }),
 
-    compileUIKit({ sourceDir: "ui", outputDir: "heroiswebxr/ui", verbose: true }),
+    compileUIKit({ sourceDir: "ui", outputDir: "public/ui", verbose: true }),
     optimizeGLTF({
       level: "medium",
     }),
   ],
   server: { host: "0.0.0.0", port: 8081, open: true },
   build: {
-    outDir: "heroiswebxr",
+    outDir: "dist",
     sourcemap: process.env.NODE_ENV !== "production",
     target: "esnext",
     rollupOptions: { input: "./index.html" },
@@ -49,7 +49,7 @@ export default defineConfig({
     exclude: ["@babylonjs/havok"],
     esbuildOptions: { target: "esnext" },
   },
-  publicDir: "heroiswebxr",
+  publicDir: "public",
   //base: "./",
-  base: "/heroiswebxr/",
+  // base: "/heroiswebxr/",
 });

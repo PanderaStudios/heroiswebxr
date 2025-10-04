@@ -4796,4 +4796,4 @@ version 0.8.2
 ===============================================
 Immersive Web SDK v${L1}
 Three.js r${la}
-EliCS v${U0}`);const ky=zt("Robot",{});class E3 extends Qn({robot:{required:[ky]},robotClicked:{required:[ky,$i]}}){init(){this.lookAtTarget=new C,this.vec3=new C}}N0.create(document.getElementById("scene-container"),{xr:{sessionMode:Fr.ImmersiveVR,offer:"always",features:{handTracking:!1,layers:!0}},features:{locomotion:{useWorker:!1},grabbing:!1,physics:!1,sceneUnderstanding:!1},level:"/glxf/Composition.glxf"}).then(s=>{const{camera:e}=s;e.position.set(-4,1.5,-6),e.rotateY(-Math.PI*.75),s.registerSystem(E3)});
+EliCS v${U0}`);const ky=zt("Robot",{});class E3 extends Qn({robot:{required:[ky]},robotClicked:{required:[ky,$i]}}){init(){this.lookAtTarget=new C,this.vec3=new C}}N0.create(document.getElementById("scene-container"),{xr:{sessionMode:Fr.ImmersiveVR,offer:"always",features:{handTracking:!1,layers:!0}},features:{locomotion:{useWorker:!0},grabbing:!1,physics:!1,sceneUnderstanding:!1},level:"public/glxf/Composition.glxf"}).then(s=>{const{camera:e}=s;e.position.set(-4,1.5,-6),e.rotateY(-Math.PI*.75),s.registerSystem(E3)});

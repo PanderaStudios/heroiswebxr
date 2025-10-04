@@ -4796,4 +4796,4 @@ version 0.8.2
 ===============================================
 Immersive Web SDK v${T1}
 Three.js r${ua}
-EliCS v${L0}`);v0.create(document.getElementById("scene-container"),{xr:{sessionMode:Fr.ImmersiveVR,offer:"always",features:{handTracking:!1,layers:!0}},features:{locomotion:{useWorker:!0},grabbing:!1,physics:!1,sceneUnderstanding:!1},level:"glxf/Composition.glxf"}).then(s=>{const{camera:e}=s;e.position.set(-4,1.5,-6),e.rotateY(-Math.PI*.75)});
+EliCS v${L0}`);v0.create(document.getElementById("scene-container"),{xr:{sessionMode:Fr.ImmersiveVR,offer:"always",features:{handTracking:!1,layers:!0}},features:{locomotion:{useWorker:!0},grabbing:!1,physics:!1,sceneUnderstanding:!1},level:"./glxf/Composition.glxf"}).then(s=>{const{camera:e}=s;e.position.set(-4,1.5,-6),e.rotateY(-Math.PI*.75)});

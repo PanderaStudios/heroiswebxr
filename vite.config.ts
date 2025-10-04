@@ -27,7 +27,7 @@ export default defineConfig({
     }),
     generateGLXF({
       metaSpatialDir: "metaspatial",
-      outputDir: "public/glxf",
+      outputDir: "heroiswebxr/glxf",
       verbose: false,
       enableWatcher: true,
     }),
@@ -51,5 +51,5 @@ export default defineConfig({
   },
   publicDir: "public",
   base: "./",
-  // base: "/heroiswebxr/",
+  //base: "/heroiswebxr/",
 });

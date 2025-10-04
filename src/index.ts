@@ -20,12 +20,12 @@ World.create(document.getElementById("scene-container") as HTMLDivElement, {
     features: { handTracking: false, layers: true },
   },
   features: {
-    locomotion: { useWorker: false },
+    locomotion: { useWorker: true },
     grabbing: false,
     physics: false,
     sceneUnderstanding: false,
   },
-  level: "/glxf/Composition.glxf",
+  level: "public/glxf/Composition.glxf",
 }).then((world) => {
   const { camera } = world;
 

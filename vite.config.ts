@@ -32,14 +32,14 @@ export default defineConfig({
       enableWatcher: true,
     }),
 
-    compileUIKit({ sourceDir: "ui", outputDir: "public/ui", verbose: true }),
+    compileUIKit({ sourceDir: "ui", outputDir: "heroiswebxr/ui", verbose: true }),
     optimizeGLTF({
       level: "medium",
     }),
   ],
   server: { host: "0.0.0.0", port: 8081, open: true },
   build: {
-    outDir: "dist",
+    outDir: "heroiswebxr",
     sourcemap: process.env.NODE_ENV !== "production",
     target: "esnext",
     rollupOptions: { input: "./index.html" },
@@ -49,7 +49,7 @@ export default defineConfig({
     exclude: ["@babylonjs/havok"],
     esbuildOptions: { target: "esnext" },
   },
-  publicDir: "public",
-  base: "./",
-  //base: "/heroiswebxr/",
+  publicDir: "heroiswebxr",
+  //base: "./",
+  base: "/heroiswebxr/",
 });

@@ -39,7 +39,7 @@ export default defineConfig({
   ],
   server: { host: "0.0.0.0", port: 8081, open: true },
   build: {
-    outDir: "heroiswebxr",
+    outDir: "dist",
     sourcemap: process.env.NODE_ENV !== "production",
     target: "esnext",
     rollupOptions: { input: "./index.html" },

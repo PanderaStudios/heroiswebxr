@@ -23,13 +23,13 @@ export class RobotSystem extends createSystem({
     // });
   }
 
-  update() {
-    this.queries.robot.entities.forEach((entity) => {
-      this.player.head.getWorldPosition(this.lookAtTarget);
-      const spinnerObject = entity.object3D!;
-      spinnerObject.getWorldPosition(this.vec3);
-      this.lookAtTarget.y = this.vec3.y;
-      spinnerObject.lookAt(this.lookAtTarget);
-    });
-  }
+  // update() {
+  //   this.queries.robot.entities.forEach((entity) => {
+  //     this.player.head.getWorldPosition(this.lookAtTarget);
+  //     const spinnerObject = entity.object3D!;
+  //     spinnerObject.getWorldPosition(this.vec3);
+  //     this.lookAtTarget.y = this.vec3.y;
+  //     spinnerObject.lookAt(this.lookAtTarget);
+  //   });
+  //}
 }

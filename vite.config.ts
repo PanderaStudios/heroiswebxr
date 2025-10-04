@@ -39,7 +39,7 @@ export default defineConfig({
   ],
   server: { host: "0.0.0.0", port: 8081, open: true },
   build: {
-    outDir: "dist",
+    outDir: "heroiswebxr",
     sourcemap: process.env.NODE_ENV !== "production",
     target: "esnext",
     rollupOptions: { input: "./index.html" },
@@ -50,5 +50,6 @@ export default defineConfig({
     esbuildOptions: { target: "esnext" },
   },
   publicDir: "public",
-  base: "./",
+  //base: "./",
+   base: "/heroiswebxr/",
 });

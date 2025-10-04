@@ -18,9 +18,9 @@ export class RobotSystem extends createSystem({
   init() {
     this.lookAtTarget = new Vector3();
     this.vec3 = new Vector3();
-    this.queries.robotClicked.subscribe("qualify", (entity) => {
-      AudioUtils.play(entity);
-    });
+    // this.queries.robotClicked.subscribe("qualify", (entity) => {
+    //   AudioUtils.play(entity);
+    // });
   }
 
   update() {
